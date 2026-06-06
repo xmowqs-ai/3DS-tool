@@ -1,0 +1,96 @@
+{
+  "title": "My First Adventure",
+  "version": "1.0.0",
+  "author": "ADV Generator User",
+  "screen_width": 320,
+  "screen_height": 240,
+  "characters": [
+    {
+      "id": "protagonist",
+      "name": "主人公",
+      "sprite": "assets/sprites/protagonist.png"
+    },
+    {
+      "id": "heroine",
+      "name": "ヒロイン",
+      "sprite": "assets/sprites/heroine.png"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "type": "normal",
+      "background": "assets/backgrounds/school.png",
+      "dialogs": [
+        {
+          "character": "protagonist",
+          "text": "おはよう。今日も学校か。",
+          "emotion": "normal"
+        },
+        {
+          "character": "heroine",
+          "text": "おはよう！今日は何か面白いことが起こるといいなぁ...",
+          "emotion": "happy"
+        }
+      ]
+    },
+    {
+      "id": "scene_002",
+      "type": "choice",
+      "background": "assets/backgrounds/school.png",
+      "dialogs": [
+        {
+          "character": "protagonist",
+          "text": "今日は何をしようか？",
+          "emotion": "normal"
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice_study",
+          "text": "勉強する",
+          "next_scene": "scene_study_end"
+        },
+        {
+          "id": "choice_play",
+          "text": "遊ぶ",
+          "next_scene": "scene_play_end"
+        }
+      ]
+    },
+    {
+      "id": "scene_study_end",
+      "type": "normal",
+      "background": "assets/backgrounds/library.png",
+      "dialogs": [
+        {
+          "character": "protagonist",
+          "text": "勉強頑張った！テストで良い点が取れそうだ。",
+          "emotion": "happy"
+        },
+        {
+          "character": "heroine",
+          "text": "頑張ったね！その調子で頑張ろう。",
+          "emotion": "happy"
+        }
+      ]
+    },
+    {
+      "id": "scene_play_end",
+      "type": "normal",
+      "background": "assets/backgrounds/park.png",
+      "dialogs": [
+        {
+          "character": "protagonist",
+          "text": "楽しかった！でもテストが心配だ...",
+          "emotion": "worried"
+        },
+        {
+          "character": "heroine",
+          "text": "そうだね。でも大丈夫、一緒に頑張ろう！",
+          "emotion": "cheerful"
+        }
+      ]
+    }
+  ]
+}
